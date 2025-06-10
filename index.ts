@@ -1,4 +1,4 @@
-import chalk, { ChalkInstance } from "chalk";
+import chalk from "chalk";
 import boxen from "boxen";
 
 const asciiLogo = `
