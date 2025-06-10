@@ -24,6 +24,7 @@ interface Details {
   github: string;
   linkedin: string;
   email: string;
+  about: string;
 }
 
 const details: Details = {
@@ -33,6 +34,7 @@ const details: Details = {
   github: chalk.greenBright(`https://github.com/kavikumar999`),
   linkedin: chalk.blueBright(`https://linkedin.com/in/kavinkumar999`),
   email: chalk.magentaBright(`kavin.kumar21k@gmail.com`),
+  about: chalk.white(`Making impossible to possible with ${chalk.green('0s')} and ${chalk.green('1s')}`),
 };
 
 const info = [
@@ -42,17 +44,22 @@ const info = [
   `${chalk.bold("📦 GitHub:")} ${details.github}`,
   `${chalk.bold("💌 Email:")} ${details.email}`,
   `${chalk.bold("🔗 LinkedIn:")} ${details.linkedin}`,
+  `${chalk.bold("💬 About:")} ${details.about}`,
 ];
 
 const asciiLogoLines = asciiLogo.trim().split("\n");
-const infoLines = info;
 
 const logoWidth = Math.max(...asciiLogoLines.map((line) => line.length));
 
 const outputLines = [];
-for (let i = 0; i < Math.max(asciiLogoLines.length, infoLines.length); i++) {
+let count = 0;
+for (let i = 0; i < Math.max(asciiLogoLines.length, info.length); i++) {
   const logoLine = asciiLogoLines[i] || "";
-  const infoLine = infoLines[i] || "";
+  let infoLine = "";
+  if (i % 2 === 0) {
+    infoLine = info[count] || "";
+    count++;
+  }
   const paddedLogoLine = logoLine.padEnd(logoWidth, " ");
   outputLines.push(`${paddedLogoLine}    ${infoLine}`);
 }
