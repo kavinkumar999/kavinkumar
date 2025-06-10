@@ -10,7 +10,7 @@
 </div>
 
 
-## To run this
+## To run this 💥 
 
 ```bash
 npx kavin
