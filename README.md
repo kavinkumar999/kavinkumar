@@ -4,7 +4,7 @@
     height="500px" 
     width="auto"
     style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto;" 
-    src="./image.png" 
+    src="https://raw.githubusercontent.com/kavinkumar999/kavinkumar/refs/heads/master/image.png" 
     alt="cli" 
   />
 </div>
