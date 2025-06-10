@@ -13,5 +13,5 @@
 ## To run this 💥 
 
 ```bash
-npx kavin
+npx kavinkumar
 ```
