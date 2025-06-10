@@ -1,9 +1,13 @@
-<p align="center">
-  <img src="./image.png" alt="cli" />
-  <h3 align="center">This is a simple CLI command to display details.</h3>
-</p>
-
-
+<div align="center">
+  <h3>This is a simple CLI command to display details.</h3>
+  <img 
+    height="500px" 
+    width="auto"
+    style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto;" 
+    src="./image.png" 
+    alt="cli" 
+  />
+</div>
 
 
 ## To run this
