@@ -1,6 +1,7 @@
 {
   "name": "kavinkumar",
-  "version": "1.0.1",
+  "version": "1.0.9",
+  "type": "module",
   "main": "dist/index.js",
   "author": "Kavin Kumar",
   "license": "ISC",
@@ -9,8 +10,10 @@
     "kavinkumar": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc -b",
-    "start": "node dist/index.js"
+    "build": "rm -rf dist && tsc -b",
+    "start": "node dist/index.js",
+    "prepare": "npm run build",
+    "postinstall": "chmod +x dist/index.js"
   },
   "keywords": ["cli"],
   "devDependencies": {
