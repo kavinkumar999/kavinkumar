@@ -1,6 +1,6 @@
 {
   "name": "kavinkumar",
-  "version": "1.0.9",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "author": "Kavin Kumar",
@@ -15,7 +15,9 @@
     "prepare": "npm run build",
     "postinstall": "chmod +x dist/index.js"
   },
-  "keywords": ["cli"],
+  "keywords": [
+    "cli"
+  ],
   "devDependencies": {
     "typescript": "^5.8.3"
   },
