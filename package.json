@@ -1,6 +1,6 @@
 {
   "name": "kavinkumar",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/index.js",
   "author": "Kavin Kumar",
@@ -10,7 +10,7 @@
     "kavinkumar": "dist/index.js"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -b",
+    "build": "rm -rf dist && tsc -b && chmod +x dist/index.js",
     "start": "node dist/index.js",
     "prepare": "npm run build",
     "postinstall": "chmod +x dist/index.js"

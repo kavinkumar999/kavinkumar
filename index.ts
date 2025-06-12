@@ -24,6 +24,7 @@ interface Details {
   website: string;
   github: string;
   linkedin: string;
+  instagram: string;
   email: string;
   about: string;
 }
@@ -34,6 +35,7 @@ const details: Details = {
   website: chalk.cyanBright(`https://kavinkumar.me`),
   github: chalk.greenBright(`https://github.com/kavikumar999`),
   linkedin: chalk.blueBright(`https://linkedin.com/in/kavinkumar999`),
+  instagram: chalk.redBright(`https://www.instagram.com/kavin_kumar._`),
   email: chalk.magentaBright(`kavin.kumar21k@gmail.com`),
   about: chalk.white(`Making impossible to possible with ${chalk.green('0s')} and ${chalk.green('1s')}`),
 };
@@ -45,6 +47,7 @@ const info = [
   `${chalk.bold("📦 GitHub:")} ${details.github}`,
   `${chalk.bold("💌 Email:")} ${details.email}`,
   `${chalk.bold("🔗 LinkedIn:")} ${details.linkedin}`,
+  `${chalk.bold("🥁 Instagram:")} ${details.instagram}`,
   `${chalk.bold("💬 About:")} ${details.about}`,
 ];
 
